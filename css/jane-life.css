@@ -1,0 +1,634 @@
+/* start variables */
+:root {
+    --main-color: #000;
+    --second-color: #fff;
+    --third-color: #ccc;
+    --fourth-color: #eee;
+    --fifth-color: #ddd;
+    --sixth-color: #f1f1f1;
+    --seventh-color: #696868;
+    --nineth-color: #616161;
+    --tenth-color: #f44336;
+    --section-padding: 48px;
+    --second-padding: 12px 24px;
+    --third-padding: 8px;
+    --fourth-padding: 8px 16px;
+    --fifth-padding: 0 8px;
+    --sixth-padding: 16px;
+}
+
+/* end variables */
+
+/* start global rules */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--sixth-color);
+    font-family: Verdana, sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+html,
+body {
+    width: auto !important;
+    overflow-x: hidden !important
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* end global rules */
+
+/* start components */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--fourth-color);
+    margin: 20px 0;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.w3-small {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.w3-middium {
+    font-size: 15px;
+}
+
+.w3-col-12s {
+    width: 99.99999%;
+}
+
+.information {
+    text-align: center;
+}
+
+.information h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.information h5 {
+    font-size: 18px;
+}
+
+.opacity {
+    opacity: 0.60;
+}
+
+.w3-button {
+    border: none;
+    display: inline-block;
+    padding: 10px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.w3-input {
+    padding: var(--third-padding);
+    display: block;
+    border: none;
+    border-bottom: 1px solid var(--third-color);
+    width: 100%;
+}
+
+.w3-border {
+    border: 1px solid var(--third-color);
+}
+
+.w3-tag {
+    background-color: var(--main-color);
+    color: var(--second-color);
+    display: inline-block;
+    padding-left: var(--third-padding);
+    padding-right: var(--third-padding);
+    text-align: center;
+}
+
+.w3-col {
+    color: var(--second-color) !important;
+    background-color: var(--main-color) !important;
+    padding: var(--fourth-padding);
+}
+
+.w3-white {
+    color: var(--main-color) !important;
+    background-color: var(--second-color) !important;
+}
+
+.w3-margin-right {
+    margin-right: 16px !important;
+}
+
+@media (min-width: 601px) {
+    .w3-coll-w3 {
+        width: 24.99999%;
+    }
+
+    .w3-coll-w9 {
+        width: 74.99999%;
+    }
+}
+
+.float {
+    float: left;
+    width: 100%;
+}
+
+.w3-margin {
+    margin: 16px;
+}
+
+.w3-container {
+    padding: 0.01em 16px;
+}
+
+.tag-name {
+    background-color: var(--main-color);
+    color: var(--second-color);
+    display: inline-block;
+    padding-left: var(--third-padding);
+    padding-right: var(--third-padding);
+    text-align: center;
+}
+
+.section-padding {
+    padding: var(--second-padding);
+    margin: 16px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* end components */
+
+/* start header */
+header {
+    width: 100%;
+    overflow: hidden;
+}
+
+header .links {
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+header .links nav {
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: var(--second-color);
+    padding: 0px;
+}
+
+header .links i {
+    padding: 11px 13px;
+    color: var(--second-color);
+}
+
+header .links nav i:hover {
+    background-color: var(--third-color);
+    color: var(--main-color);
+}
+
+@media (max-width: 767px) {
+    header .links {
+        display: none;
+    }
+}
+
+.welcome {
+    background-color: var(--second-color);
+    font-family: "Oswald";
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    text-align: center;
+}
+
+.welcome h1 {
+    text-transform: uppercase;
+    font-size: 48px;
+}
+
+.welcome h6 span {
+    background-color: var(--main-color);
+    color: var(--second-color);
+    padding: var(--fifth-padding);
+}
+
+/* end header */
+
+/* start landing */
+.landing {
+    color: var(--second-color);
+    position: relative;
+    letter-spacing: 4px;
+}
+
+.landing .image img {
+    width: 1600px;
+    height: 1060px;
+    max-width: 100%;
+    height: auto;
+}
+
+.landing .info {
+    padding: var(--second-padding);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+}
+
+.landing .info h1 {
+    font-size: 36px;
+}
+
+.landing .info h1:nth-child(2) {
+    font-size: 64px;
+    text-transform: uppercase;
+}
+
+@media (max-width:600px) {
+    .landing .info h1:nth-child(2) {
+        display: none;
+    }
+}
+
+.landing .info h6 button {
+    font-size: 18px;
+    padding: 15px 24px !important;
+    border: none;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.landing .info h6 button:hover {
+    opacity: 1;
+}
+
+/* end landing */
+
+/* start section */
+
+/* start left section */
+.section {
+    padding: var(--fourth-padding);
+}
+
+.section .left-section .first-left-section {
+    padding: var(--second-padding);
+    margin: 16px;
+}
+
+@media (min-width:993px) {
+    .left-section {
+        width: 66.66666%;
+    }
+}
+
+.section .left-section .justify {
+    text-align: justify !important;
+
+}
+
+.section .left-section .image {
+    padding-top: var(--sixth-padding);
+    padding-bottom: var(--sixth-padding);
+}
+
+.section .left-section .image img {
+    width: 100%;
+}
+
+.section .left-section .justify p button:nth-child(2) {
+    color: var(--second-color);
+    background-color: var(--main-color);
+}
+
+.section .left-section .justify p button {
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+@media (max-width:300px) {
+    .section .left-section .justify p {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section .left-section .justify p button:nth-child(2) {
+        margin-top: 40px;
+    }
+}
+
+.section .left-section .justify p button:hover {
+    color: var(--main-color);
+    background-color: var(--third-color);
+}
+
+.section .left-section .justify p button:nth-child(2) span {
+    padding-left: var(--third-padding);
+    padding-right: var(--third-padding);
+}
+
+@media (min-width:993px) {
+    .section .left-section .justify .reply .image {
+        width: 16.66666%;
+    }
+
+    .section .left-section .justify .reply .your-reply {
+        width: 83.33333%;
+    }
+}
+
+@media (max-width: 768px) {
+    .section .left-section .justify .reply .image {
+        padding-bottom: 0;
+    }
+
+    .section .left-section .justify .reply .your-reply {
+        padding-top: 0;
+    }
+
+    hr {
+        display: block;
+    }
+}
+
+.section .left-section .justify .reply .image img {
+    width: 90px;
+}
+
+@media (max-width: 500px) {
+    .section .left-section .justify .reply {
+        display: block;
+    }
+}
+
+/* end  first section */
+
+/* start right section*/
+@media (min-width:993px) {
+    .right-section {
+        width: 33.33333%;
+    }
+}
+
+.right-section .first-right-section {
+    color: var(--second-color);
+    background-color: var(--main-color);
+}
+
+.right-section .first-right-section img {
+    width: 100%;
+    filter: grayscale(70%);
+    -webkit-filter: grayscale(70%);
+    vertical-align: middle;
+}
+
+.right-section .second-right-section ul li {
+    background-color: var(--second-color);
+    border-bottom: 1px solid var(--fifth-color);
+    padding: var(--fourth-padding);
+    padding-top: var(--sixth-padding);
+    padding-bottom: var(--sixth-padding);
+}
+
+.right-section .second-right-section ul li:hover {
+    background-color: var(--third-color);
+}
+
+.right-section .second-right-section ul li img {
+    width: 50px;
+    float: left;
+    margin-right: 16px;
+    vertical-align: middle;
+}
+
+.right-section .second-right-section ul li:last-of-type img {
+    filter: sepia(75%);
+    -webkit-filter: sepia(75%);
+}
+
+.right-section .second-right-section ul li .w3-large {
+    font-size: 20px;
+}
+
+.right-section .third-right-section .ad-section .advertisement {
+    height: 200px;
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+    color: var(--main-color) !important;
+    background-color: var(--sixth-color) !important;
+    position: relative;
+}
+
+.right-section .third-right-section .ad-section .advertisement span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.right-section .fourth-right-section .tag-name {
+    color: var(--main-color);
+    background-color: var(--second-color);
+    padding: 0.01em 13px;
+    text-align: start;
+}
+
+.right-section .fourth-right-section .tag-name span:not(:first-of-type) {
+    margin-bottom: 16px;
+    font-size: 12px !important;
+    color: var(--main-color) !important;
+    background-color: var(--sixth-color) !important;
+}
+
+.right-section .fourth-right-section .tag-name span:first-of-type {
+    color: var(--second-color);
+    background-color: var(--main-color);
+    font-size: 16px;
+    display: inline-block;
+    padding-left: var(--third-padding);
+    padding-right: var(--third-padding);
+    text-align: center;
+}
+
+.right-section .fifth-right-section .images {
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--fifth-padding);
+}
+
+.right-section .fifth-right-section .images .images-1,
+.right-section .fifth-right-section .images .images-2 {
+    padding: var(--fifth-padding);
+    width: 49.99999%;
+}
+
+.right-section .fifth-right-section .images .images-2 p:nth-of-type(1) img {
+    filter: grayscale(75%);
+}
+
+.right-section .fifth-right-section .images img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.right-section .sixth-right-section .plateforms {
+    padding: var(--fourth-padding);
+    font-size: 24px;
+}
+
+.right-section .sixth-right-section .plateforms i {
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.right-section .sixth-right-section .plateforms i:hover {
+    color: var(--seventh-color);
+}
+
+.right-section .seventh-right-section .contect input {
+    width: 100%;
+    overflow: visible;
+}
+
+.right-section .seventh-right-section .contect p button {
+    color: var(--second-color);
+    background-color: var(--tenth-color);
+    display: block;
+    width: 100%;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.right-section .seventh-right-section .contect p button:hover {
+    background-color: var(--third-color);
+    color: var(--main-color);
+}
+
+/* end right section */
+
+/* end section */
+
+/* start footer */
+footer {
+    padding: 32px;
+    color: var(--second-color) !important;
+    background-color: var(--nineth-color) !important;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    clear: both;
+}
+
+footer>a {
+    color: var(--second-color) !important;
+    background-color: var(--main-color) !important;
+    padding: var(--second-padding);
+}
+
+/* end footer */
